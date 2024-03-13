@@ -10,7 +10,7 @@ Author: [Tomasz Hachaj](https://home.agh.edu.pl/~thachaj/)
 
 ## Setup
 
-1 Download embedding [embedding.npy (2714MB)](https://drive.google.com/file/d/1FVGa3gGYjr_Mx2o_nibBr9bgU_ZIizQV/view?usp=sharing) and put in in the [data](data/) directory. 
+1 Download embedding [embedding.npy (271.4MB)](https://drive.google.com/file/d/1FVGa3gGYjr_Mx2o_nibBr9bgU_ZIizQV/view?usp=sharing) and put in in the [data](data/) directory. 
 
 2 Download CREDO dataset [CREDO dataset (1014MB)](https://drive.google.com/file/d/1jSuQXfxFzWsFoTEYDno1V_Aqn5AaNs_I/view) and set path to  in file [test.py](test.py) by assigning variable:
 
