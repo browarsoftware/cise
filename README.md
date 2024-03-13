@@ -1,6 +1,6 @@
 ### CREDO image search engine
 
-Engine that find the most similar images to a given query image.
+Engine that finds the most similar images to a given query [CREDO](https://credo.science/) CMOS image.
 
 Python / Flask implementation of an algorithm:
 
