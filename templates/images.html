@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CREDO image search engine</title>
+    <link rel="icon" type="image/x-icon" href="./static/img/smalllogo.jpg">
+</head>
+<body>
+    <h1><img src="./static/img/smalllogo.jpg"/>&nbsp CREDO image search engine</h1></br>
+    Query image:</br>
+    <img src="data:image/jpeg;base64,{{ img_data[0] }}" id="img-upload0" alt="img_data" class="img-upload"/></br>
+    Most similar (CREDO hit distance):</br>
+    {% for a in range(1, img_data|length) %}
+        <img src="data:image/jpeg;base64,{{ img_data[a] }}" id="img-upload{{a}}" alt="img_data" class="img-upload"/>({{ credo_hit_dist[a] }})
+
+        {% if a % 4 == 0: %}
+            </br>
+        {% endif %}
+
+    {% endfor %}
+    </br>
+    <form action = "/" method = "post" enctype="multipart/form-data">
+        <input type = "submit" value="Next search">
+    </form>
+
+    </br>
+    Copyright ©2024 <a href="https://home.agh.edu.pl/~thachaj/">Tomasz Hachaj</a>
+</body>
+</html>

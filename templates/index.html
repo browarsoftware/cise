@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CREDO image search engine</title>
+    <link rel="icon" type="image/x-icon" href="./static/img/smalllogo.jpg">
+ </head>
+<body>
+    <h1><img src="./static/img/smalllogo.jpg"/>&nbsp CREDO image search engine</h1></br>
+    <form action = "/success" method = "post" enctype="multipart/form-data">
+        <!-- (IE 10+, Edge (EdgeHTML), Edge (Chromium), Chrome, Firefox 42+) -->
+        <input type="file" name="file" accept=".png" onchange="readURL(this)"/>
+        <select name="count" id="count">
+          <option value="8">8</option>
+          <option value="16">16</option>
+          <option value="32">32</option>
+          <option value="64">64</option>
+        </select>
+        <!--<input type="file" name="file" />-->
+        <input type = "submit" value="Search" id="Search" disabled>
+    </form>
+    </br>
+    Query image:</br>
+    <img src="" alt="No image selected" id="img" style='height:60px;width:60px'></br></br>
+    Copyright ©2024 <a href="https://home.agh.edu.pl/~thachaj/">Tomasz Hachaj</a>
+
+    <script>
+    function readURL(input) {
+    if (input.files && input.files[0]) {
+
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        document.querySelector("#img").setAttribute("src",e.target.result);
+        document.querySelector("#Search").removeAttribute('disabled')
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+    }
+    </script>
+    <script>
+        $(document).ready(
+        function(){
+            $('input:file').change(
+                function(){
+                    if ($(this).val()) {
+                        $('input:Search').attr('disabled',false);
+                        // or, as has been pointed out elsewhere:
+                        // $('input:submit').removeAttr('disabled');
+                    }
+                }
+                );
+        });
+    </script>
+</body>
+</html>
