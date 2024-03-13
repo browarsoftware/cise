@@ -18,3 +18,14 @@ Entry points are in file [test.py](test.py)
 path_to_data = 'd:/Folder_with_credo_dataset'
 ```
 
+## Using the app
+
+1 Open website in browser, select a \*.png file (query image) with hit data, select number of similar images to find and click Search button.
+
+![](img/index.jpg)
+
+2 You should be redirected to website that shows most similar images and distance in embedding space between query image and results. You can return to previous page by clicking Next search button.
+
+![](img/images.jpg)
+
+![](static/img/logo.jpg)
