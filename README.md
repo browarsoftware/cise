@@ -1,10 +1,12 @@
 ### CREDO image search engine
 
-Flask implementation of algorithm:
+Engine that find the most similar images to a given query image.
+
+Python / Flask implementation of an algorithm:
 
 Piekarczyk, M.; Hachaj, T. On the Search for Potentially Anomalous Traces of Cosmic Ray Particles in Images Acquired by Cmos Detectors for a Continuous Stream of Emerging Observational Data. Sensors 2024, 24, 1835. https://doi.org/10.3390/s24061835 
 
-Entry points are in file [test.py](test.py)
+Author: [Tomasz Hachaj](https://home.agh.edu.pl/~thachaj/)
 
 ## Setup
 
@@ -18,11 +20,13 @@ path_to_data = 'd:/Folder_with_credo_dataset'
 
 ## Using the app
 
-1 Open website in browser, select a \*.png file (query image) with hit data, select number of similar images to find and click Search button.
+1 Entry points are in file [test.py](test.py)
+
+2 Open website in browser, select a \*.png file (query image) with hit data, select number of similar images to find and click Search button.
 
 ![](img/index.jpg)
 
-2 You should be redirected to website that shows most similar images and distance in embedding space between query image and results. You can return to previous page by clicking Next search button.
+3 You should be redirected to website that shows most similar images and distance in embedding space between query image and results. You can return to previous page by clicking Next search button.
 
 ![](img/images.jpg)
 
