@@ -12,7 +12,7 @@ Author: [Tomasz Hachaj](https://home.agh.edu.pl/~thachaj/)
 
 1 Download embedding [embedding.npy (271.4MB)](https://drive.google.com/file/d/1FVGa3gGYjr_Mx2o_nibBr9bgU_ZIizQV/view?usp=sharing) and put in in the [data](data/) directory. 
 
-2 Download CREDO dataset [CREDO dataset (1014MB)](https://drive.google.com/file/d/1jSuQXfxFzWsFoTEYDno1V_Aqn5AaNs_I/view) and set path to  in file [test.py](test.py) by assigning variable:
+2 Download CREDO dataset [CREDO dataset (1014MB)](https://drive.google.com/file/d/1jSuQXfxFzWsFoTEYDno1V_Aqn5AaNs_I/view), unzip it in directory of your choice and set path to that directory in file [test.py](test.py) by assigning variable:
 
 ```
 path_to_data = 'd:/Directory_with_credo_dataset'
@@ -22,11 +22,11 @@ path_to_data = 'd:/Directory_with_credo_dataset'
 
 1 Entry points are in file [test.py](test.py)
 
-2 Open website in browser, select a \*.png file (query image) with hit data, select number of similar images to find and click Search button.
+2 Open website in browser, select a \*.png file (query image) with CREDO hit data, select number of similar images to find and click Search button.
 
 ![](img/index.jpg)
 
-3 You should be redirected to website that shows most similar images and distance in embedding space between query image and results. You can return to previous page by clicking Next search button.
+3 You should be redirected to website that shows most similar images and distances in embedding space between query image and results. You can return to previous page by clicking Next search button.
 
 ![](img/images.jpg)
 
