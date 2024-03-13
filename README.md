@@ -1,3 +1,5 @@
+![](static/img/logo.jpg)
+
 ### CREDO image search engine
 
 Flask implementation of algorithm:
@@ -6,11 +8,13 @@ Piekarczyk, M.; Hachaj, T. On the Search for Potentially Anomalous Traces of Cos
 
 Entry points are in file [test.py](test.py)
 
-In order to run download data and set paths in [test.py](test.py).
+## Setup
 
+1 Download embedding [embedding.npy (2714MB)](https://drive.google.com/file/d/1FVGa3gGYjr_Mx2o_nibBr9bgU_ZIizQV/view?usp=sharing) and put in in the [data](data/) folder 
 
-## Data to download
+2 Download CREDO dataset [CREDO dataset (1014MB)](https://drive.google.com/file/d/1jSuQXfxFzWsFoTEYDno1V_Aqn5AaNs_I/view) and set path to  in file [test.py](test.py) by assigning variable:
 
-Download embedding [embedding.npy (2714MB)](https://drive.google.com/file/d/1FVGa3gGYjr_Mx2o_nibBr9bgU_ZIizQV/view?usp=sharing) and put in in the [data](data/) folder 
+```
+path_to_data = 'd:/Folder_with_credo_dataset'
+```
 
-Download dataset with 573335 images from: [CREDO dataset (1014MB)](https://drive.google.com/file/d/1jSuQXfxFzWsFoTEYDno1V_Aqn5AaNs_I/view)
