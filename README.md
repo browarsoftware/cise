@@ -1,5 +1,3 @@
-![](static/img/logo.jpg)
-
 ### CREDO image search engine
 
 Flask implementation of algorithm:
@@ -27,5 +25,7 @@ path_to_data = 'd:/Folder_with_credo_dataset'
 2 You should be redirected to website that shows most similar images and distance in embedding space between query image and results. You can return to previous page by clicking Next search button.
 
 ![](img/images.jpg)
+
+## Have a nice search! =o)
 
 ![](static/img/logo.jpg)
