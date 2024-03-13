@@ -1,3 +1,9 @@
+"""
+Author: Tomasz Hachaj, 2024
+Department of Applied Computer Science in AGH University of Krakow, Poland.
+https://home.agh.edu.pl/~thachaj/
+"""
+
 import numpy as np
 dim_count = 62
 path_to_results = 'data'

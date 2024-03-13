@@ -1,3 +1,9 @@
+"""
+Author: Tomasz Hachaj, 2024
+Department of Applied Computer Science in AGH University of Krakow, Poland.
+https://home.agh.edu.pl/~thachaj/
+"""
+
 # Jinja2 language
 # https://maplibre.org/maplibre-gl-js/docs/examples/
 #from distutils.log import debug

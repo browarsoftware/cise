@@ -10,12 +10,12 @@ Author: [Tomasz Hachaj](https://home.agh.edu.pl/~thachaj/)
 
 ## Setup
 
-1 Download embedding [embedding.npy (2714MB)](https://drive.google.com/file/d/1FVGa3gGYjr_Mx2o_nibBr9bgU_ZIizQV/view?usp=sharing) and put in in the [data](data/) folder 
+1 Download embedding [embedding.npy (2714MB)](https://drive.google.com/file/d/1FVGa3gGYjr_Mx2o_nibBr9bgU_ZIizQV/view?usp=sharing) and put in in the [data](data/) directory. 
 
 2 Download CREDO dataset [CREDO dataset (1014MB)](https://drive.google.com/file/d/1jSuQXfxFzWsFoTEYDno1V_Aqn5AaNs_I/view) and set path to  in file [test.py](test.py) by assigning variable:
 
 ```
-path_to_data = 'd:/Folder_with_credo_dataset'
+path_to_data = 'd:/Directory_with_credo_dataset'
 ```
 
 ## Using the app
@@ -29,6 +29,10 @@ path_to_data = 'd:/Folder_with_credo_dataset'
 3 You should be redirected to website that shows most similar images and distance in embedding space between query image and results. You can return to previous page by clicking Next search button.
 
 ![](img/images.jpg)
+
+## Creating new embedding
+
+In order to create new embedding (for example after updating dataset) use source code from repository [anomalies_bigdata](https://github.com/browarsoftware/anomalies_bigdata) to generate new embedding of dataset, V matrix and "mean face". Than limit the size of embedding and V with [export_data_from_numpy.py](export_data_from_numpy.py). New files have to be put in [data](data/) directory. You can also export \*.json data with [export_data_from_json.py](export_data_from_json.py).
 
 ## Have a nice search! =o)
 

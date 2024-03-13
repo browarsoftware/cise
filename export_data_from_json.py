@@ -1,3 +1,9 @@
+"""
+Author: Tomasz Hachaj, 2024
+Department of Applied Computer Science in AGH University of Krakow, Poland.
+https://home.agh.edu.pl/~thachaj/
+"""
+
 import json
 from pathlib import Path
 file_name = 'd:/data/credo/json_100-199/export_1679574802409_1679649447803.json'
